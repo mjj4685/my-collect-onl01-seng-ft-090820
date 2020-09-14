@@ -14,4 +14,3 @@ def my_collect(array)
 end
 
 my_collect(list) {|i| i.split(" ").first}
-
