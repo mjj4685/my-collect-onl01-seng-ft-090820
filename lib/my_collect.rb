@@ -1,16 +1,15 @@
-list = ["Max", "Mia", "Bella"]
+collection = ["Max", "Mia", "Bella"]
 
 
 def my_collect(array)
   i = 0
-  name_collection = []
+  names = []
   while i < array.length
-    name_collection.push yield(array[i])
-  # you could also do it this way:
-  # name_collection << yield(array[i])
+    names.push yield(array[i])
     i += 1
   end
-  name_collection
+  names
 end
 
-my_collect(list) {|i| i.split(" ").first}
+my_collect(collection) {|i| i.split(" ").first}
+
